@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PortfolioController extends Controller
 {
-    // ── Data semua project ─
+    // Data semua project 
     private function projects(): array
     {
         return [
@@ -139,7 +139,7 @@ class PortfolioController extends Controller
         ];
     }
 
-    // ── Halaman utama ─
+    // Halaman utama 
     public function index()
     {
         return view('index', [
@@ -147,7 +147,7 @@ class PortfolioController extends Controller
         ]);
     }
 
-    // ── Halaman detail project ─
+    // Halaman detail project 
     public function show(string $slug)
     {
         $projects = $this->projects();
